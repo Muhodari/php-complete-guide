@@ -9,7 +9,8 @@ echo" <h5> Constants </h5>";
 // $drc = "Congo My Nation";
 define("drc","Kitasha");
 #this initialization won't work since there is previous initiazation of the drc to kitasha
-define("drc","Musanze");
+
+define("drc","Musanze"); // comes with the warning that the varible drc has been created before
 
 echo drc;
 echo "<br><br>";
