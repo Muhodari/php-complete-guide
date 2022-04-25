@@ -10,6 +10,7 @@
     
 <?php
 
+# the comment with hash tag 
 echo "welcome to the body of the application";
 
 ?>
