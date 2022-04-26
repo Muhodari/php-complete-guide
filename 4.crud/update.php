@@ -1,3 +1,5 @@
+
+
 <?php
 include('DB_connect.php');
 
@@ -7,6 +9,7 @@ $content = $_POST['content'];
 $id = $_POST['id'];
 
 $query= mysqli_query($connect," UPDATE users SET name ='$name', email='$email', content='$content' WHERE id = $id ");
+
 
 if(!$query){
     echo"<h3> Error occured</h3> ";
