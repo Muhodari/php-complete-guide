@@ -29,7 +29,7 @@ $query = mysqli_query($connect,"INSERT INTO users(name,email,content) values ('$
 
 if($query){
     echo "<h3>User created successfully </h3>";
-    header( "refresh:2;url=form.php" );
+    header("refresh:1, url=read.php");
 }
 
 
