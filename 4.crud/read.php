@@ -24,7 +24,8 @@ echo  "email: ".$rows['email'] . " <br>";
 echo  "content: ".$rows['content'] . " <br>";
 
 echo "<a href ='delete.php?id=".$rows["id"]."'> Delete</a> <br>";
-echo "<a href =''>Edit</a>";
+echo "<a href ='edit_form.php?id=".$rows["id"]."&name=".$rows["name"]."&email=".$rows["email"].
+"&content=".$rows["content"]."'>Edit</a>";
 
 
 
