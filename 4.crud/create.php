@@ -25,11 +25,17 @@ if(!$connect){
     echo mysqli_error();
 }
 
-$query = mysqli_query($connect,"INSERT INTO users(name,email,content) values ('$name','$email','$content')");
+
+if(!$connect){
+    echo "<h3>Error occured no connection created</h3>";
+}
+
+
+
+$query = mysqli_query($connect,"INSERT INTO users('name','email','content') values ('$name','$email','$content')");
 
 if($query){
     echo "<h3>User created successfully </h3>";
-    header("refresh:1, url=read.php");
 }
 
 
